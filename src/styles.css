@@ -22,10 +22,14 @@ code {
 
 ul {
   padding-inline-start: 20px;
+  color: white;
 }
 
 li{
   padding: 4px;
+  color: white;
+  
+  font-size: 0.85rem;
 }
 
 .square {
@@ -82,6 +86,7 @@ li{
   margin-top: 20px;
   margin-left: 20px;
   max-height: 8vh;
+  color: white;
 }
 
 .isRed{
@@ -92,4 +97,60 @@ li{
 .isGreen{
   color: yellow;
   text-shadow: 0 0 24px yellow;
+}
+
+.status{
+  color: white;
+  background-color: transparent;
+}
+
+button{
+  color: white;
+  border: none;
+  font-size: 0.85rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.btnMoves:hover{
+  scale: 1.1;
+}
+
+.winner{
+  background-color: rgb(81, 205, 247);
+  box-shadow:0 0 20px rgb(81, 205, 247);
+  color: black;
+  padding: 2rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 20vh;
+  top: 40vh;
+  left: 35vw;
+  position: absolute;
+  animation: win 1s ease-in-out;
+}
+
+.winnerTitle{
+  font-size: 1.5rem;
+}
+
+p{
+  background-color: transparent;
+  margin: 10px;
+}
+
+@keyframes win {
+  0%{
+    left: -35vw;
+    top: 40vh;
+  }
+  100%{
+    left: 35vw;
+  }
 }
