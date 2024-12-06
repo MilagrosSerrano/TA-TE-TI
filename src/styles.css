@@ -154,3 +154,43 @@ p{
     left: 35vw;
   }
 }
+
+@media (max-width: 520px){
+  .square{
+    height: 7rem;
+    width: 7rem;
+  }
+  .winner{
+    width: 70%;
+    left: 15vw;
+  }
+
+  @keyframes win {
+    0%{
+      left: -35vw;
+      top: 40vh;
+    }
+    100%{
+      left: 15vw;
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .game-board{
+    width: 100%;
+  }
+  .square{
+    height: 5rem;
+    width: 5rem;
+  }
+  .gameTitle{
+    font-size: 4rem;
+  }
+  .status{
+    font-size:small ;
+  }
+  .btnMoves{
+    font-size: small;
+  }
+}
